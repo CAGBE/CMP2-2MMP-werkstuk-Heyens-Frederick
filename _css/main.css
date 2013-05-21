@@ -2,3 +2,280 @@
 Hier komt je eigen CSS.
 Zorg voor een overzichtelijke, verzorgde layout.
 */
+
+@import url('normalize.css');
+
+
+#siteLogo{
+	height: 50px;
+}
+
+#header h2{
+	font-family: 'Tw Cen MT Condensed';
+	text-transform: uppercase;
+	font-size: 50px;
+	color: #0F3756;
+	line-height: 0px;display: none;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+/*Wrappers*/
+
+#banner-wrapper,
+#main-wrapper,
+#main-navigation-wrapper,
+#header,
+#footer-wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+
+#header-wrapper{
+	width: 100%;
+	background-color: #DCDFE5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	-webkit-box-shadow:  0px 1px 5px 5px rgba(0, 0, 0, 0.7);
+    box-shadow:  0px 1px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+#main-wrapper{
+	margin-top: 200px;
+}
+
+
+/* LINKS*/
+#header-group{
+	width: 515px;
+	float: left;
+}
+
+#courtesey{
+	position: absolute;
+	top:0px
+	right: 0px;
+}
+
+#courtesey ul li{
+	display: inline;
+	margin-left: 10px;
+}
+
+#main-navigation{
+	width: 320px;
+	float: left;
+	margin-top: 20px;
+}
+
+#main-navigation ul li{
+	display: inline;
+	margin: 50px 10px;
+	padding: 15px;
+	background-color: #0F3756;
+}
+
+#main-navigation a:link{color: #FFF; text-transform: uppercase;}
+#main-navigation a:visited{color: #FFF;}
+#main-navigation a:hover{color: #FFF;}
+
+
+
+/* SECTION REVIEW */
+.review{
+	width: 80%;
+}
+.review .entry img{
+	width: 150px;
+	float: left;
+	margin-right: 25px;
+}
+
+p.meta
+{
+	border-top: 1px solid #c5c5c5;
+	border-bottom: 1px solid #c5c5c5;
+	padding: 10px 0 10px;
+}
+
+.review .entry p:last-child{
+	clear: left;
+
+}
+
+.review .entry p:nth-child(2){
+	font-family: Cantarell;
+
+}
+
+h2.title{
+ 	font-family: Cantarell;
+ 	text-transform: uppercase;
+ 	margin: 0px;
+}
+
+
+
+img.star-rating{
+	width: 25px;
+	margin: 0 5px;
+}
+
+.imdb{
+	border-top: 1px solid #c5c5c5;
+	padding: 10px 0 10px;
+	margin: 15px 0 50px;
+	font-family: Cantarell;
+
+}
+
+.imdb a:link{color: #000;}
+.imdb a:visited{color: #000;}
+.imdb a:hover{color: #000;}
+
+h2.title a:link{color: #000;}
+h2.title a:visited{color: #000;}
+h2.title a:hover{color: #000;}
+
+p.meta{
+	/* margin: 0px; */
+}
+
+span.date{
+	float: right;
+}
+
+/* SECTION COMMENTS */
+/* add comment*/
+input#author{
+ width: 100%;
+}
+
+textarea#comment{
+	width: 100%;
+	max-width: 100%;
+	height: 175px;
+	max-height: 350px;
+}
+
+
+/* comments */
+.comments{
+	border: 1px solid #c5c5c5;
+	width: 75%;
+	margin: 25px 0 25px;
+}
+
+#comments-header{
+	background-color: #f5f5f5;
+	padding: 25px;
+}
+
+#wrapper-comments-header{
+	border-top: 1px solid #c5c5c5;
+	background-color: #f5f5f5;
+	margin: 25px 0 25px;
+	padding: 25px;
+}
+
+#comments-header h2,
+#wrapper-comments-header h2{
+	margin: 0px;
+	font-family: Cantarell;
+
+}
+
+#wrapper-comments .comment,
+#add-comments{
+	padding: 25px;
+}
+
+.posted cite{
+	font-family: Cantarell;
+	margin-right: 10px;
+}
+
+
+/*fonts */
+
+@font-face{
+font-family: Cantarell;
+src: url('fonts/Cantarell/Cantarell-Bold.ttf'),
+     url('fonts/Cantarell/Cantarell-BoldOblique.ttf'),
+     url('fonts/Cantarell/Cantarell-Oblique.ttf'),
+     url('fonts/Cantarell/Cantarell-Regular.ttf');
+}
+
+
+
+/* ADD REVIEW */
+/* ------------- LOGIN FORM */
+#login-wrapper{
+	border: 1px solid #c5c5c5;
+	width: 75%;
+	margin: 25px 0 25px;
+}
+
+#login-header{
+	background-color: #f5f5f5;
+	padding: 25px;
+}
+
+#login-form{
+	padding: 25px;
+}
+
+input#login-author,
+input#login-pwd{
+ 	height: 30px;
+ 	padding: 2.5px;
+ 	width: 100%;
+}
+
+#login-submit{
+	height: 30px;
+	padding: 2.5px 50px 2.5px 50px;
+}
+
+/* ------------- ADD MOVIE REVIEW */
+#addreview-wrapper{
+	border: 1px solid #c5c5c5;
+	width: 75%;
+	margin: 25px 0 25px;
+}
+
+#addreview-header{
+	background-color: #f5f5f5;
+	padding: 25px;
+}
+
+#addreview-form{
+	padding: 25px;
+}
+
+input#addmovie-title,
+input#addmovie-author,
+input#addmovie-director,
+input#addmovie-IMDB,
+select#addmovie-rating{
+ 	height: 30px;
+ 	padding: 2.5px;
+ 	width: 100%;
+}
+
+textarea#addmovie-review{
+	width: 100%;
+	max-width: 100%;
+	height: 175px;
+	max-height: 350px;
+}
+
+#addmovie-submit{
+	height: 30px;
+	padding: 2.5px 50px 2.5px 50px;
+}
